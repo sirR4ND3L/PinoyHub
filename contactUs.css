@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3a3a3a;
+    color: #ffffff;
+}
+
+header {
+    background-color: #212121;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.contact-container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.contact-container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact-options h2 {
+    font-size: 2em;
+    margin-top: 20px;
+    color: #00f7ff;
+}
+
+.contact-method {
+    margin-bottom: 20px;
+}
+
+.contact-method h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #00a3a9;
+}
+
+.contact-method a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-method a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+address {
+    font-style: normal;
+}
+
+section span {
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+    margin-right: 25px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    width: 80px;
+    text-align: center;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+span:hover {
+    background: #434343;
+    border-radius: 15px;
+    scale: 1.05;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px 10px #535353;
+}
+
+a:hover{
+    color: #00f7ff;
+    transition: all 0.3s ease-in-out;
+}
+
+footer {
+    background-color: #212121;
+    color: #ffffff;
+    text-align: center;
+    bottom: 0;
+    height: 25px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+
+footer p {
+    margin-top: 5px;
+    color: #ffffff;
+    font-size: 1em;
+}
+
+#pre-loader {
+    background: #242424 url(logo/1496.gif) no-repeat center;
+    background-size: 5%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}

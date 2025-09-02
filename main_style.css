@@ -1,0 +1,709 @@
+@import url('https://fonts.googleapis.com/css?family=Urbanist');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Urbanist';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    border: 3px solid #3a3a3a;
+    border: 1px solid #202020;
+    box-shadow: 0px 0px 10px 5px #242424;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background: #202020;
+    color: #ffffff;
+}
+
+
+/* Head/top */
+header .headSide {
+    position: relative;
+    width: 100%;
+    height: 10%;
+    border: 1px solid #202020;
+    box-shadow: 0px 0px 10px 5px #242424;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* title */
+header .headSide .title{
+    display: flex;
+    position: absolute;
+    left: 0;
+    margin-left: 1%;
+    transition: all 0.3s ease-in-out;
+}
+
+header .headSide .title h1 {
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+header .headSide .title .hub {
+    text-align: center;
+    width: 85px;
+    background-color: #00f7ff;
+    border-radius: 4px;
+    color: #202020;
+    letter-spacing: 2px;
+}
+
+header .headSide .title a {
+    display: flex;
+    left: 0;
+    margin-left: 7%;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+header .headSide .title:hover {
+    transform: translateY(-1px);
+    scale: 1.01;
+}
+
+
+/* SearchBar */
+header .headSide .searchBar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 20px #4b4743, 0 0 #4c4a48;
+    width: 40%;
+    height: 60%;
+    transition: all 0.4s ease-in-out;
+    border-radius: 10px;
+    /* border: 1px solid #ffffff; */
+}
+
+header .headSide .searchBar:hover {
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 35px 5px #717171;
+}
+
+header .headSide .searchBar .input {
+    width: 90%;
+    height: 100%;
+}
+
+header .headSide .searchBar .input input {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-indent: 20px;
+    width: 89.5%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    color: #ffffff;
+    border: none;
+    border-right: 1px solid #262626;
+    box-shadow: 0 0 10px #4b4743, 0 0  #4c4a48;
+    background: #202020;
+    letter-spacing: 1px;
+}
+
+header .headSide .searchBar input::placeholder {
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+header .headSide .searchBar input[type=text] {
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+header .headSide .searchBar .bi{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 1.3em;
+    height: 1.3em;
+    background: transparent;
+    position: absolute;
+    right: 0;
+    margin-right: 5px;
+    font-size: 3em;
+}
+
+
+/* Profile Picture */
+header .headSide .profilePicture{
+    position: absolute;
+    right: 0;
+    margin: 30px;
+    /* border: 1px solid #ffffff; */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+header .headSide .profilePicture img{
+    border-radius: 50%;
+    width: 49px;
+    height: 49px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 12px 2px #717171;
+}
+
+header .headSide .profilePicture p {
+    font-family: 'Urbanist';
+    position: absolute;
+    border-radius: 50px;
+    right: 60px;
+    text-align: center;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    width: 100px;
+    height: 50px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+header .headSide .profilePicture img:hover{
+    scale: 1.1;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 35px 5px #717171;
+}
+
+header .headSide .profilePicture p:hover {
+    scale: 1.1;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 35px 5px #717171;
+    background-color: #3d3d3d;
+    cursor: pointer;
+}
+
+/* Latest/Recommended/Most Viewed Side */
+header .list{
+    border: 1px solid #202020;
+    box-shadow: 0px 0px 10px 5px #242424;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 15%;
+    height: 90%;
+}
+
+header .list .movieList {
+    /* border: 1px solid #ffffff; */
+    display: flex;
+    top: 0;
+    flex-direction: column;
+    position: relative;
+    width: 90%;
+    height: 84%;
+}
+
+
+/* for latest movie */
+header .list .movieList .latestMovie {
+    border-bottom: 1px solid #ffffff;
+    margin: 5px;
+    height: 40%;
+    width: 100%;
+}
+
+header .list .movieList .latestMovie h4 {
+    font-size: 20px;
+    font-weight: 900;
+    width: 100%;
+    /* border: 1px solid #ffffff; */
+    text-align: center;
+    margin-bottom: 5px;
+    transition: all 0.2s ease-in-out;
+    animation: pop-in-out 2s infinite ease-in-out;
+}
+
+header .list .movieList .latestMovie li {
+    /* border: 1px solid #ffffff; */
+    position: relative;
+    height: 25.8%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 5px 0px 5px 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+header .list .movieList .latestMovie li:hover {
+    background: #2a2a2a;
+    border-radius: 10px;
+}
+
+header .list .movieList .latestMovie li span {
+    font-size: 11px;
+    font-weight: 400;
+    color: #624d30;
+}
+
+header .list .movieList .latestMovie li img {
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+}
+
+header .list .movieList .latestMovie li button {
+    font-family: 'Urbanist';
+    font-size: 13px;
+    font-weight: 900;
+    margin-left: 10px;
+    background-color: transparent;
+    color: inherit;
+    overflow: hidden;
+    margin-top: 5px;
+    border-width: 9px;
+    width: 250px;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+/* for recommended */
+header .list .movieList .recommended {
+    border-bottom: 1px solid #ffffff;
+    margin: 5px;
+    height: 40%;
+    width: 100%;
+}
+
+header .list .movieList .recommended h4 {
+    font-size: 20px;
+    font-weight: 900;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+    transition: all 0.2s ease-in-out;
+    animation: pop-in-out 2s infinite ease-in-out;
+}
+
+header .list .movieList .recommended li {
+    /* border: 1px solid #ffffff; */
+    position: relative;
+    height: 25.8%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 5px 0px 5px 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+header .list .movieList .recommended li:hover {
+    background: #2a2a2a;
+    border-radius: 10px;
+}
+
+header .list .movieList .recommended li span {
+    font-size: 11px;
+    font-weight: 400;
+    color: #624d30;
+}
+
+header .list .movieList .recommended li img {
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+}
+
+header .list .movieList .recommended li button {
+    font-family: 'Urbanist';
+    font-size: 13px;
+    font-weight: 900;
+    margin-left: 10px;
+    background-color: transparent;
+    color: inherit;
+    overflow: hidden;
+    margin-top: 5px;
+    border-width: 9px;
+    width: 250px;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+
+/* for most viewed */
+header .list .movieList .mostViewed {
+    border-bottom: 1px solid #ffffff;
+    margin: 5px;
+    height: 40%;
+    width: 100%;
+}
+
+header .list .movieList .mostViewed h4 {
+    font-size: 20px;
+    font-weight: 900;
+    width: 100%;
+    /* border: 1px solid #ffffff; */
+    text-align: center;
+    margin-bottom: 5px;
+    transition: all 0.2s ease-in-out;
+    animation: pop-in-out 2s infinite ease-in-out;
+}
+
+header .list .movieList .mostViewed li {
+    /* border: 1px solid #ffffff; */
+    position: relative;
+    height: 25.8%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 5px 0px 5px 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+header .list .movieList .mostViewed li:hover {
+    background: #2a2a2a;
+    border-radius: 10px;
+}
+
+header .list .movieList .mostViewed li span {
+    font-size: 11px;
+    font-weight: 400;
+    color: #624d30;
+}
+
+header .list .movieList .mostViewed li img {
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+}
+
+header .list .movieList .mostViewed li button {
+    font-family: 'Urbanist';
+    font-size: 13px;
+    font-weight: 900;
+    margin-left: 10px;
+    background-color: transparent;
+    color: inherit;
+    overflow: hidden;
+    margin-top: 5px;
+    border-width: 9px;
+    width: 250px;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+
+/* this is for about/contact us/2024 Pinoyhub RCC */
+header .list .information {
+    /* border: 1px solid #ffffff; */
+    width: 90%;
+    height: 15%;
+    padding: 0px 0px 0px 5px ;
+    display: grid;
+    transition: all 0.3s ease-in-out;
+    flex-direction: column;
+    position: relative;
+}
+
+header .list .information h4 {
+    font-size: 13px;
+    padding: 10px 0px 0px 0px ;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+header .list .information .about {
+    /* border: 1px solid #ffffff; */
+    width: 25%;
+    text-align: center;
+}
+
+header .list .information .about a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+header .list .information .contact {
+    color: #ffffff;
+    /* border: 1px solid #ffffff; */
+    width: 41%;
+    padding: 10px 0px 0px 5px ;
+}
+
+header .list .information .contact a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+header .list .information .remark {
+    color: #ffffff;
+    /* border: 1px solid #ffffff; */
+    width: 80%;
+    height: 60%;
+    margin: 7px 0 0 0 ;
+    padding: 2px 0 0 8px ;
+}
+
+header .list .information .remark .bi {
+    margin-right: 4px;
+    font-size: 14px;
+    opacity: .5;
+}
+
+header .list .information .register {
+    color: #ffffff;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    left: 60%;
+    width: 30%;
+    height: 30px;
+    padding: 0px 0px 0px 5px ;
+}
+
+header .list .information .register a{
+    color: #ffffff;
+    width: 42%;
+    text-decoration: none;
+}
+
+header .list .information .login {
+    color: #ffffff;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 60%;
+    top: 35%;
+    width: 21%;
+    height: 30px;
+    padding: 0px 0px 0px 5px ;
+}
+
+header .list .information .login a{
+    color: #ffffff;
+    width: 42%;
+    text-decoration: none;
+}
+
+header .list .register:hover, .login:hover {
+    background: #3c3c3c;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+header .list .about:hover, .contact:hover {
+    background: #3c3c3c;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+header .list .information .remark:hover{
+    background: #3c3c3c;
+    transition: all 0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+
+/* this keyframe is for h4 tag in latest/recommended/mostviewed */
+@keyframes pop-in-out {
+    0%,100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+
+/* for displayMovie  */
+header .displayMovie {
+    border: 1px solid #3a3a3a;
+    box-shadow: 0px 0px 5px 5px #262626;
+    position: absolute;
+    left: 15%;
+    bottom: 0;
+    width: 85%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0 10px 30px;
+    overflow-y: auto;
+    transition: all 0.5s ease-in-out;
+    border-top-left-radius: 8px;
+}
+
+header .displayMovie::-webkit-scrollbar {
+    display: none;
+}
+
+header .displayMovie li {
+    border-radius: 8px;
+    position: relative;
+    list-style-type: none;
+    width: 16.7%;
+    height: 50%;
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s ease-in-out;
+}
+
+header .displayMovie .displayCard:hover {
+    transform: translateY(-4%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background: #242424;
+    transition: all .3s ease;
+}
+
+header .displayMovie li img{
+    border: 1px solid #5a5a5a;
+    box-shadow: 0 0 50px 5px #3a3a3a;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+    background-color: #202020;
+    border-radius: 8px;
+    border: none;
+}
+
+header .displayMovie .displayCard:hover img {
+    opacity: 0.1;
+    border-radius: 8px;
+}
+
+header .displayMovie .about {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 8px;
+}
+
+header .displayMovie .displayCard:hover .about {
+    opacity: 1;
+}
+
+header .displayMovie .about span {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #d3d3d3;
+    transition: opacity 0.5s ease-in-out;
+}
+
+header .displayMovie .about .spaceLine {
+    position: relative;
+    border: 1px solid #606060;
+    margin: 5px 0 5px 0;
+    width: 90%;
+    transition: all 0.5s ease-in-out;
+}
+
+header .displayMovie button {
+    width: 60px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    color: inherit;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+header .displayMovie button::before,
+header .displayMovie button::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #00f7ff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: width 0.3s ease-in-out;
+}
+
+header .displayMovie button::before {
+    top: 0;
+}
+
+header .displayMovie button::after {
+    bottom: 0;
+}
+
+header .displayMovie button:hover::before,
+header .displayMovie button:hover::after {
+    width: 100%;
+}
+
+header .displayMovie button:hover {
+    transform: scale(1.1);
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+
+header .displayMovie button:active {
+    transform: translateY(2px);
+    transition: transform 0.1s ease-in-out;
+}
+
+/* for Pre-loader */
+#pre-loader {
+    background: #242424 url(logo/1496.gif) no-repeat center;
+    background-size: 5%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}

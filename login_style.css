@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Urbanist');
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #242424;
+    color: white;
+    font-family: 'Urbanist';
+    font-weight: 800;
+}
+
+.title {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 17%;
+    transform: translate(-50%,-27%);
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.title h1 {
+    text-align: center;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 0 0 10px ;
+}
+
+.title .hub {
+    text-align: center;
+    width: 95px;
+    background-color: #00f7ff;
+    border-radius: 4px;
+    color: #202020;
+    letter-spacing: 2px;
+    text-shadow: none;
+}
+
+
+.image-logo img{
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    top: 3vh;
+    left: 3vh;
+}
+
+
+.container {
+    margin: 50px;
+    width: 600px;
+    min-height: 80vh;
+    max-width: 100%;
+    background-color: #303030;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 10);
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1 {
+    text-align: justify;
+    font-size: 50px;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 10px;
+}
+
+.container form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 0 50px;
+    flex-direction: column;
+    height: 100%;
+}
+
+form label {
+    padding: 5px;
+    letter-spacing: 2px;
+}
+
+.container input {
+    background-color: #414141;
+    color: #fff;
+    text-indent: 5px;
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px;
+    width: 100%;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.container input:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 5px #3f3f3f;
+}
+
+.container button {
+    background-color: #414141 ;
+    color: white;
+    font-size: 15px;
+    padding: 5px 15px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 10px 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.container button:hover {
+    background: #3d3d3d;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 5px #575757;
+}
+
+.container button:active {
+    background: #4e4e4e;
+    transform: scale(1);
+    box-shadow: 0 0 20px 5px #575757;
+}
+
+.container a {
+    color: #00f7ff;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 0 5px 0 ;
+    transition: all 0.3s ease-in-out;
+}
+
+.container a:hover {
+    scale: 1.1;
+    text-shadow: 0 0 20px #006366;
+}
+
+.container span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+#pre-loader {
+    background: #242424 url(logo/1496.gif) no-repeat center;
+    background-size: 5%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .title h1 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  input, button {
+    font-size: 1rem;
+  }
+}

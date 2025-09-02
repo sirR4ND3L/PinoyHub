@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo/ph-logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="login_style.css">
+    <title>PinoyHub</title>
+</head>
+<body>
+
+    <div id="pre-loader"></div>
+    
+    <div class="title">
+        <h1 class="pinoy">Pinoy</h1>
+        <h1 class="hub">hub</h1>
+    </div>
+    
+    <div class="container"> 
+        <div class="login-page">
+            <h1>Login</h1>
+            <form action="login.php" method="Post">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" required>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+                
+                <button type="submit" id="login-button">Login</button>
+            </form>
+            <span>Don't have an Account? <a href="register.html">Register now!</a></span>
+        </div>
+    </div>
+    
+    <script src="function.js"></script>
+</body>
+</html>
